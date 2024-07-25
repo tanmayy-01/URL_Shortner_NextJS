@@ -1,7 +1,7 @@
 import Url, {IUrl} from "@/models/Url";
 import connectDB from "@/config/db";
 
-class UrlRepository {
+export default class UrlRepository {
     private urlModal;
     constructor() {
         connectDB();
