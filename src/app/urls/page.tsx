@@ -28,7 +28,8 @@ export default async function UrlList() {
         <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100">
             <div className="p-10 bg-white rounded-lg shadow-2xl max-w-4xl w-full">
                 <h1 className="text-3xl font-bold mb-6 text-center text-gray-700">All short Urls</h1>
-                <div className="table table-zebra w-full">
+                <div className="overflow-x-auto">
+                    <table className="table table-zebra w-full">
                     <thead>
                         <tr>
                             <th>
@@ -56,6 +57,7 @@ export default async function UrlList() {
                             )
                         })}
                     </tbody>
+                    </table>
                 </div>
             </div>
         </div>
