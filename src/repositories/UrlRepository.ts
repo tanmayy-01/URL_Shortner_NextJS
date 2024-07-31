@@ -28,7 +28,7 @@ export default class UrlRepository {
         return await this.urlModal.findByIdAndDelete(id).lean();
     }
 
-    async createUrl(shortUrl:string, originalUrl:string): Promise<IUrl> {
+    async createUrl(originalUrl:string, shortUrl:string): Promise<IUrl> {
         return await this.urlModal.create({shortUrl, originalUrl});
     }
     
